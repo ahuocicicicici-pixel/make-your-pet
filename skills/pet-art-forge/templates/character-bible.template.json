@@ -1,0 +1,71 @@
+{
+  "_README": "角色圣经 / Character Bible —— 一个角色身份的唯一真相源。填满每个字段；这些值会被拼进每一帧的提示词，锁定『57个动作里始终是同一只』。复制本文件改名，例如 my-pet.json。占位符示例都给了猫的写法。",
+
+  "id": "my-pet",
+  "name": "我的宠物",
+  "version": 1,
+
+  "_sourcePhotos_doc": "★照片驱动核心：用户上传的真实宠物照片(相对本文件路径)。生成主视觉(idle/frame_00)时作为 image-to-image 参考——照片决定『长什么样』，提示词只负责转成目标画风。建议放 1-3 张正面清晰图到同目录 source/ 下。其余字段从照片观察填写，用于补充文字约束 + 调色校验。",
+  "sourcePhotos": ["source/pet-front.jpg", "source/pet-side.jpg"],
+
+  "species": {
+    "_doc": "物种 / 体型。type 进提示词主语；bodyType 控制比例。",
+    "type": "orange tabby cat",
+    "age": "kitten",
+    "bodyType": "round chubby proportions, big head, short legs, stubby tail"
+  },
+
+  "coloring": {
+    "_doc": "毛色 + 16进制。hex 同时驱动一致性校验的『调色板贴合度』。pattern 写花纹。",
+    "primary": {
+      "name": "ginger orange",
+      "hex": "#E8862E",
+      "description": "warm ginger-orange fur over back, head and tail"
+    },
+    "secondary": {
+      "name": "cream",
+      "hex": "#FBF3E4",
+      "description": "cream-white belly, chest, chin and paws"
+    },
+    "pattern": "bold classic tabby stripes, faint M-shape mark on forehead"
+  },
+
+  "landmarks": [
+    { "_doc": "标志性特征。required:true 的每帧都不能省 —— 这是『认得出是它』的关键。",
+      "name": "eyes",     "description": "big round amber eyes, friendly and bright", "required": true },
+    { "name": "nose",     "description": "small pink triangle nose", "required": true },
+    { "name": "whiskers", "description": "long white whiskers", "required": true },
+    { "name": "ears",     "description": "pointy ears with pink inner lining", "required": true },
+    { "name": "cheeks",   "description": "round fluffy cheeks", "required": false }
+  ],
+
+  "outfit": [
+    { "_doc": "固定配饰：每一帧都穿戴，不可省略/变色。留空数组表示不穿。",
+      "type": "bandana", "color": "red #D94F45", "detail": "small red bandana around neck" },
+    { "type": "collar",  "color": "gold #E8B83A", "detail": "thin collar with a tiny gold bell" }
+  ],
+
+  "facing": "facing camera, slight 3/4 left turn",
+
+  "style": {
+    "_doc": "画风。signature 是视觉标志(如模切白边)，跨角色通常保持不变以统一整套桌宠观感。",
+    "type": "modern kawaii sticker illustration",
+    "technique": "clean bold outlines, soft cel-shading, gentle gradient shadow",
+    "signature": "thick white die-cut sticker border",
+    "palette": "warm, saturated but soft"
+  },
+
+  "personality": "playful, mischievous, friendly",
+
+  "negativePalette": [
+    "_doc: 反漂移 —— 明确禁止出现的颜色/特征，会追加进负面词。",
+    "no blue fur", "no green fur", "no black-and-white only", "not a dog"
+  ],
+
+  "consistencyCheck": {
+    "_doc": "校验参数。paletteTolerance 越小越严；scaleTolerance 是同一动作各帧角色包围盒允许的相对变化。",
+    "paletteTolerance": 70,
+    "scaleTolerance": 0.12,
+    "checkOutfit": true
+  }
+}

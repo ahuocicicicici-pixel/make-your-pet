@@ -1,0 +1,37 @@
+{
+  "_README": "动作 → 姿态锚点 的映射。任何物种都用同一组 6 个『姿态参考图』(角色不同，姿态分类相同)。生成某动作的帧时，用它的锚点参考图 + ref-00(主基准) 一起喂模型。先生成 idle 第0帧当 ref-00-master-sit，再 image-to-image 把它改姿势得到其余 5 个锚点。",
+
+  "anchors": {
+    "sit":           { "ref": "ref-00-master-sit",   "pose": "端坐正面、安静 / sitting upright, calm, facing camera",        "role": "主基准 master baseline" },
+    "wave":          { "ref": "ref-01-wave",          "pose": "坐着抬一只前爪招手 / sitting, one front paw raised waving" },
+    "sprawl":        { "ref": "ref-02-play-sprawl",   "pose": "趴卧前扑、吐舌玩耍 / play-bow sprawl, tongue out, energetic" },
+    "curl":          { "ref": "ref-03-curl-hide",     "pose": "蜷缩低头藏脸 / curled up, head down, hiding" },
+    "paw-to-mouth":  { "ref": "ref-04-paw-to-mouth",  "pose": "坐着爪/嘴到食盆 / sitting, paw and muzzle near mouth/bowl" },
+    "lying-focus":   { "ref": "ref-05-lying-focus",   "pose": "趴卧专注做事 / lying down, focused on a task" }
+  },
+
+  "bootstrap": [
+    "1. 文本生成 idle 第0帧(只用 style prefix，无参考) → 反复调直到满意 → 存为 ref-00-master-sit。",
+    "2. 用 ref-00 做 image-to-image，分别改写为 wave/sprawl/curl/paw-to-mouth/lying-focus 五个姿势 → 存为 ref-01..ref-05。",
+    "3. 之后每个动作: 该动作锚点图 + ref-00 一起做参考；同一动作 frame_01.. 用 frame_00 当参考保持组内连贯。"
+  ],
+
+  "actionToAnchor": {
+    "idle": "sit", "blink": "sit", "look-around": "sit", "greet": "wave", "happy": "sprawl",
+    "sad": "curl", "angry": "sit", "love": "wave", "head-pat": "sit", "lick": "paw-to-mouth",
+    "belly-rub": "sprawl", "shake-paw": "wave", "chase-tail": "sprawl", "walk": "sprawl",
+    "run": "sprawl", "drag": "curl", "eat": "paw-to-mouth", "sleep": "curl", "bath": "lying-focus",
+    "hungry": "sit", "dirty": "sit", "sick": "curl",
+
+    "work-construction": "lying-focus", "work-cook": "lying-focus", "work-guard": "wave",
+    "work-art": "lying-focus", "study": "lying-focus", "work-done": "wave", "play-ball": "sprawl",
+    "play-frisbee": "sprawl", "jump-rope": "sprawl", "coin-get": "wave", "levelup": "wave",
+    "shopping": "wave", "drink": "paw-to-mouth", "brush": "sit", "wake": "curl",
+    "bath-shake": "lying-focus", "eat-full": "paw-to-mouth", "dizzy": "sit", "yawn": "paw-to-mouth",
+    "excited": "sprawl",
+
+    "goodbye": "curl", "cry": "curl", "surprised": "sit", "shy": "sit", "bored": "sit",
+    "think": "sit", "peek": "sit", "travel": "wave", "celebrate": "wave", "recover": "curl",
+    "scared": "curl", "wink": "wave", "dance": "sprawl", "beg": "wave", "sneeze": "sit"
+  }
+}

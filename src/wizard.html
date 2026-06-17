@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self';" />
+  <title>认识一下你的宠物</title>
+  <link rel="stylesheet" href="wizard-styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🐾 认识一下你的宠物</h1>
+    <p class="sub">回答几个小问题，决定它是谁。随时可以跳过用默认的 Coco。</p>
+  </header>
+  <main id="form"><!-- 题目由 wizard-renderer.js 动态生成 --></main>
+  <footer>
+    <button id="skip" class="ghost">跳过</button>
+    <button id="save" class="primary">生成我的宠物</button>
+  </footer>
+  <div id="toast" class="toast" hidden></div>
+  <script src="wizard-renderer.js"></script>
+</body>
+</html>

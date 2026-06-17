@@ -1,0 +1,29 @@
+{
+  "_README": "性格测验题目。任何前端(桌宠 App / 网页 / 直接在聊天里问)都可以渲染这套题，把答案收成一个 profile.json，再交给 make-brain.js 生成大脑。每题 field 对应 profile 字段;有 options 的可选预设,也允许自由填(free)。",
+  "questions": [
+    { "field": "name", "q": "给你的宠物起个名字？", "type": "free", "default": "COCO" },
+    { "field": "species", "q": "它是什么动物 / 什么品种？", "type": "free", "default": "提醒小狗（雪纳瑞）" },
+    { "field": "ownerAddress", "q": "它该怎么称呼你？", "type": "free", "default": "主人" },
+    { "field": "temperament", "q": "它的性格更偏哪种？", "type": "choice",
+      "options": [
+        { "value": "introvert", "label": "安静内向 i — 不爱叫，默默陪着你" },
+        { "value": "extrovert", "label": "活泼外向 e — 元气满满，话痨" },
+        { "value": "aloof", "label": "高冷独立 — 傲娇，嘴硬心软" },
+        { "value": "clingy", "label": "黏人撒娇 — 离不开你，求关注" }
+      ], "default": "introvert" },
+    { "field": "tone", "q": "它说话的语气？(可多选)", "type": "multi",
+      "options": ["温柔安心", "俏皮搞怪", "高冷简短", "元气满满", "不催命", "偶尔撒娇"],
+      "default": ["温柔安心", "不催命"] },
+    { "field": "remindStyle", "q": "它的提醒风格？", "type": "choice",
+      "options": [
+        { "value": "gentle", "label": "轻声不催 — 佛系温柔，逾期也温柔追问" },
+        { "value": "strict", "label": "紧盯到底 — 负责严格，不完成不罢休" },
+        { "value": "minimal", "label": "到点就好 — 极简，提醒一次不啰嗦" }
+      ], "default": "gentle" },
+    { "field": "quirk", "q": "它有什么小怪癖 / 小弱点？（让它有灵魂的那种）", "type": "free",
+      "placeholder": "例：贪吃、爱睡觉、怕打雷、收集袜子……",
+      "default": "贪吃：什么都想闻一下、尝一下，被发现会假装没事。" },
+    { "field": "catchphrase", "q": "它的口头禅 / 语气词？", "type": "free",
+      "placeholder": "例：汪 / 喵 / 咕 / 嗷", "default": "汪" }
+  ]
+}

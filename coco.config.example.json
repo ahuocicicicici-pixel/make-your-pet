@@ -1,0 +1,26 @@
+{
+  "_README": "Coco 统一配置。复制为 coco.config.json 即可。整份文件都可选——不存在时默认纯本地离线模式，零配置也能玩。",
+
+  "_mode_doc": "local = 纯本地（默认，无需任何服务器）。cloud = 接你自己的 VPS broker（跨设备/微信提醒，需 link.config.json）。",
+  "mode": "local",
+
+  "brain": {
+    "_doc": "本地聊天大脑。留空 apiKey → 用内置预设台词，完全离线也不报错。填了就直连对应厂商。",
+    "provider": "none",
+    "_provider_options": "none | anthropic | openai | deepseek | ollama",
+    "apiKey": "",
+    "model": "",
+    "baseUrl": "",
+    "systemPrompt": "你是 Coco，一只活泼黏人的雪纳瑞桌宠。说话简短、口语、可爱，偶尔撒娇，会关心主人。"
+  },
+
+  "reminders": {
+    "_doc": "本地提醒：到点用系统通知弹出。聊天里说『提醒我 18:00 喝水』即可，或用 /提醒 18:00 喝水。",
+    "enabled": true
+  },
+
+  "timeline": {
+    "_doc": "本地生活轨迹：宠物活动写入本地文件，点面板按钮用内置网页查看。无需服务器。",
+    "enabled": true
+  }
+}

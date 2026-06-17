@@ -1,0 +1,558 @@
+{
+  "name": "COCO handdrawn sticker pack v2",
+  "count": 50,
+  "style": "high-resolution 768px-long-side cute hand-drawn cartoon COCO stickers, tight transparent crop, no white card",
+  "identity": "female miniature schnauzer: long eyelashes, big glossy eyes, narrow muzzle, slight smile, blue harness, pink straps; quiet obedient i-dog, greedy and guilty around food",
+  "stickers": [
+    {
+      "index": 1,
+      "id": "recorded",
+      "caption": "记好啦",
+      "file": "assets/stickers_coco_handdrawn_v2/01_recorded.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        678,
+        768
+      ]
+    },
+    {
+      "index": 2,
+      "id": "due_now",
+      "caption": "到点啦",
+      "file": "assets/stickers_coco_handdrawn_v2/02_due_now.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        670,
+        768
+      ]
+    },
+    {
+      "index": 3,
+      "id": "watching",
+      "caption": "暗中观察",
+      "file": "assets/stickers_coco_handdrawn_v2/03_watching.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        645,
+        768
+      ]
+    },
+    {
+      "index": 4,
+      "id": "morning",
+      "caption": "早上好",
+      "file": "assets/stickers_coco_handdrawn_v2/04_morning.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        639,
+        768
+      ]
+    },
+    {
+      "index": 5,
+      "id": "done",
+      "caption": "搞定啦",
+      "file": "assets/stickers_coco_handdrawn_v2/05_done.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        684,
+        768
+      ]
+    },
+    {
+      "index": 6,
+      "id": "not_yet",
+      "caption": "怎么还没",
+      "file": "assets/stickers_coco_handdrawn_v2/06_not_yet.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        698,
+        768
+      ]
+    },
+    {
+      "index": 7,
+      "id": "guarding",
+      "caption": "我在守着",
+      "file": "assets/stickers_coco_handdrawn_v2/07_guarding.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        635,
+        768
+      ]
+    },
+    {
+      "index": 8,
+      "id": "later",
+      "caption": "晚点再叫",
+      "file": "assets/stickers_coco_handdrawn_v2/08_later.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        718,
+        768
+      ]
+    },
+    {
+      "index": 9,
+      "id": "water",
+      "caption": "喝口水",
+      "file": "assets/stickers_coco_handdrawn_v2/09_water.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        633,
+        768
+      ]
+    },
+    {
+      "index": 10,
+      "id": "break_down",
+      "caption": "拆小一点",
+      "file": "assets/stickers_coco_handdrawn_v2/10_break_down.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_01.png",
+      "size": [
+        688,
+        768
+      ]
+    },
+    {
+      "index": 11,
+      "id": "want_bite",
+      "caption": "想吃一口",
+      "file": "assets/stickers_coco_handdrawn_v2/11_want_bite.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        632,
+        768
+      ]
+    },
+    {
+      "index": 12,
+      "id": "not_steal",
+      "caption": "我没偷吃",
+      "file": "assets/stickers_coco_handdrawn_v2/12_not_steal.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        641,
+        768
+      ]
+    },
+    {
+      "index": 13,
+      "id": "just_passing",
+      "caption": "只是路过",
+      "file": "assets/stickers_coco_handdrawn_v2/13_just_passing.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        643,
+        768
+      ]
+    },
+    {
+      "index": 14,
+      "id": "lashes_shaking",
+      "caption": "睫毛狂抖",
+      "file": "assets/stickers_coco_handdrawn_v2/14_lashes_shaking.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        637,
+        768
+      ]
+    },
+    {
+      "index": 15,
+      "id": "smell_please",
+      "caption": "给我闻闻",
+      "file": "assets/stickers_coco_handdrawn_v2/15_smell_please.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        651,
+        768
+      ]
+    },
+    {
+      "index": 16,
+      "id": "sit_wait",
+      "caption": "坐好等",
+      "file": "assets/stickers_coco_handdrawn_v2/16_sit_wait.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        598,
+        768
+      ]
+    },
+    {
+      "index": 17,
+      "id": "quiet_good",
+      "caption": "不叫不闹",
+      "file": "assets/stickers_coco_handdrawn_v2/17_quiet_good.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        646,
+        768
+      ]
+    },
+    {
+      "index": 18,
+      "id": "super_good",
+      "caption": "我超乖",
+      "file": "assets/stickers_coco_handdrawn_v2/18_super_good.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        629,
+        768
+      ]
+    },
+    {
+      "index": 19,
+      "id": "peek_food",
+      "caption": "偷看一眼",
+      "file": "assets/stickers_coco_handdrawn_v2/19_peek_food.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        664,
+        768
+      ]
+    },
+    {
+      "index": 20,
+      "id": "dont_scold",
+      "caption": "不要凶我",
+      "file": "assets/stickers_coco_handdrawn_v2/20_dont_scold.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_02.png",
+      "size": [
+        638,
+        768
+      ]
+    },
+    {
+      "index": 21,
+      "id": "got_it",
+      "caption": "收到汪",
+      "file": "assets/stickers_coco_handdrawn_v2/21_got_it.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        521,
+        768
+      ]
+    },
+    {
+      "index": 22,
+      "id": "ok_ok",
+      "caption": "好的呢",
+      "file": "assets/stickers_coco_handdrawn_v2/22_ok_ok.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        574,
+        768
+      ]
+    },
+    {
+      "index": 23,
+      "id": "heard_you",
+      "caption": "我听见啦",
+      "file": "assets/stickers_coco_handdrawn_v2/23_heard_you.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        552,
+        768
+      ]
+    },
+    {
+      "index": 24,
+      "id": "soft_remind",
+      "caption": "悄悄提醒",
+      "file": "assets/stickers_coco_handdrawn_v2/24_soft_remind.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        557,
+        768
+      ]
+    },
+    {
+      "index": 25,
+      "id": "look_first",
+      "caption": "先看一眼",
+      "file": "assets/stickers_coco_handdrawn_v2/25_look_first.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        554,
+        768
+      ]
+    },
+    {
+      "index": 26,
+      "id": "no_rush",
+      "caption": "不急不急",
+      "file": "assets/stickers_coco_handdrawn_v2/26_no_rush.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        557,
+        768
+      ]
+    },
+    {
+      "index": 27,
+      "id": "with_you",
+      "caption": "我陪你",
+      "file": "assets/stickers_coco_handdrawn_v2/27_with_you.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        570,
+        768
+      ]
+    },
+    {
+      "index": 28,
+      "id": "rest_ok",
+      "caption": "可以休息",
+      "file": "assets/stickers_coco_handdrawn_v2/28_rest_ok.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        620,
+        768
+      ]
+    },
+    {
+      "index": 29,
+      "id": "hungry",
+      "caption": "有点饿",
+      "file": "assets/stickers_coco_handdrawn_v2/29_hungry.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        555,
+        768
+      ]
+    },
+    {
+      "index": 30,
+      "id": "can_eat",
+      "caption": "能吃吗",
+      "file": "assets/stickers_coco_handdrawn_v2/30_can_eat.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_03.png",
+      "size": [
+        523,
+        768
+      ]
+    },
+    {
+      "index": 31,
+      "id": "dont_forget",
+      "caption": "别忘啦",
+      "file": "assets/stickers_coco_handdrawn_v2/31_dont_forget.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        714,
+        768
+      ]
+    },
+    {
+      "index": 32,
+      "id": "i_remember",
+      "caption": "我记着呢",
+      "file": "assets/stickers_coco_handdrawn_v2/32_i_remember.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        732,
+        768
+      ]
+    },
+    {
+      "index": 33,
+      "id": "call_softly",
+      "caption": "轻轻叫你",
+      "file": "assets/stickers_coco_handdrawn_v2/33_call_softly.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        725,
+        768
+      ]
+    },
+    {
+      "index": 34,
+      "id": "finished_yet",
+      "caption": "完成了吗",
+      "file": "assets/stickers_coco_handdrawn_v2/34_finished_yet.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        715,
+        768
+      ]
+    },
+    {
+      "index": 35,
+      "id": "almost_there",
+      "caption": "还差一点",
+      "file": "assets/stickers_coco_handdrawn_v2/35_almost_there.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        768,
+        739
+      ]
+    },
+    {
+      "index": 36,
+      "id": "dont_lie_down",
+      "caption": "先别躺",
+      "file": "assets/stickers_coco_handdrawn_v2/36_dont_lie_down.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        711,
+        768
+      ]
+    },
+    {
+      "index": 37,
+      "id": "dont_fake_forget",
+      "caption": "别装忘",
+      "file": "assets/stickers_coco_handdrawn_v2/37_dont_fake_forget.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        682,
+        768
+      ]
+    },
+    {
+      "index": 38,
+      "id": "waiting_you",
+      "caption": "乖乖等你",
+      "file": "assets/stickers_coco_handdrawn_v2/38_waiting_you.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        752,
+        768
+      ]
+    },
+    {
+      "index": 39,
+      "id": "good_food",
+      "caption": "有好吃的吗",
+      "file": "assets/stickers_coco_handdrawn_v2/39_good_food.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        766,
+        768
+      ]
+    },
+    {
+      "index": 40,
+      "id": "really_not_eat",
+      "caption": "我真的没想吃",
+      "file": "assets/stickers_coco_handdrawn_v2/40_really_not_eat.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_04.png",
+      "size": [
+        740,
+        768
+      ]
+    },
+    {
+      "index": 41,
+      "id": "good_today",
+      "caption": "今天也乖",
+      "file": "assets/stickers_coco_handdrawn_v2/41_good_today.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        566,
+        768
+      ]
+    },
+    {
+      "index": 42,
+      "id": "owner_here",
+      "caption": "主人我在",
+      "file": "assets/stickers_coco_handdrawn_v2/42_owner_here.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        525,
+        768
+      ]
+    },
+    {
+      "index": 43,
+      "id": "write_now",
+      "caption": "马上记",
+      "file": "assets/stickers_coco_handdrawn_v2/43_write_now.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        578,
+        768
+      ]
+    },
+    {
+      "index": 44,
+      "id": "quiet_reminder",
+      "caption": "小声提醒",
+      "file": "assets/stickers_coco_handdrawn_v2/44_quiet_reminder.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        555,
+        768
+      ]
+    },
+    {
+      "index": 45,
+      "id": "you_busy",
+      "caption": "你先忙",
+      "file": "assets/stickers_coco_handdrawn_v2/45_you_busy.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        499,
+        768
+      ]
+    },
+    {
+      "index": 46,
+      "id": "go_check",
+      "caption": "我去看看",
+      "file": "assets/stickers_coco_handdrawn_v2/46_go_check.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        575,
+        768
+      ]
+    },
+    {
+      "index": 47,
+      "id": "give_bite",
+      "caption": "这口能给我吗",
+      "file": "assets/stickers_coco_handdrawn_v2/47_give_bite.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        636,
+        768
+      ]
+    },
+    {
+      "index": 48,
+      "id": "caught",
+      "caption": "被发现了",
+      "file": "assets/stickers_coco_handdrawn_v2/48_caught.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        584,
+        768
+      ]
+    },
+    {
+      "index": 49,
+      "id": "didnt_see",
+      "caption": "我没看见",
+      "file": "assets/stickers_coco_handdrawn_v2/49_didnt_see.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        550,
+        768
+      ]
+    },
+    {
+      "index": 50,
+      "id": "hug",
+      "caption": "贴贴一下",
+      "file": "assets/stickers_coco_handdrawn_v2/50_hug.png",
+      "source_sheet": "assets/sticker_sources/coco_handdrawn_v2/sheet_05.png",
+      "size": [
+        597,
+        768
+      ]
+    }
+  ]
+}

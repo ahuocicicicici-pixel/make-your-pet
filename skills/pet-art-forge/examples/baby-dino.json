@@ -1,0 +1,75 @@
+{
+  "id": "baby-dino-roru",
+  "name": "小恐龙 噜噜",
+  "version": 1,
+  "sourcePhotos": [
+    "source/dino-front.jpg",
+    "source/dino-side.jpg"
+  ],
+  "species": {
+    "type": "baby cartoon dinosaur",
+    "age": "hatchling",
+    "bodyType": "round pudgy proportions, big head, tiny arms, short stubby legs, chubby tail"
+  },
+  "coloring": {
+    "primary": {
+      "name": "mint green",
+      "hex": "#7FD1A6",
+      "description": "soft mint-green skin over body, head and tail"
+    },
+    "secondary": {
+      "name": "pale yellow",
+      "hex": "#FCEFB6",
+      "description": "pale-yellow belly and small back spikes"
+    },
+    "pattern": "smooth skin with a row of soft rounded pale-yellow back spikes"
+  },
+  "landmarks": [
+    {
+      "name": "eyes",
+      "description": "huge round shiny dark eyes, innocent and curious",
+      "required": true
+    },
+    {
+      "name": "spikes",
+      "description": "row of soft rounded plates along the back",
+      "required": true
+    },
+    {
+      "name": "belly",
+      "description": "pale rounded belly",
+      "required": true
+    },
+    {
+      "name": "teeth",
+      "description": "two tiny baby teeth in a small smile",
+      "required": false
+    }
+  ],
+  "outfit": [
+    {
+      "type": "hat",
+      "color": "orange #F2994A",
+      "detail": "tiny orange explorer cap"
+    }
+  ],
+  "facing": "facing camera, slight 3/4 left turn",
+  "style": {
+    "type": "modern kawaii sticker illustration",
+    "technique": "clean bold outlines, soft cel-shading",
+    "signature": "thick white die-cut sticker border",
+    "palette": "soft pastel"
+  },
+  "personality": "curious, bouncy, sweet",
+  "negativePalette": [
+    "no scary teeth",
+    "not realistic dinosaur",
+    "no scales-heavy reptile",
+    "no sharp claws"
+  ],
+  "consistencyCheck": {
+    "paletteTolerance": 80,
+    "scaleTolerance": 0.13,
+    "checkOutfit": false
+  }
+}

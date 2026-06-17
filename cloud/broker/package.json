@@ -1,0 +1,17 @@
+{
+  "name": "coco-reminder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "COCO reminder dog local scaffold with task storage and heartbeat mock delivery.",
+  "scripts": {
+    "add": "node src/cli.js add",
+    "complete": "node src/cli.js complete",
+    "heartbeat": "node src/cli.js heartbeat",
+    "deliver": "node src/cli.js deliver",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_README": "本地版性格测验题。make-personality.js 读它生成 coco.config.json 的 systemPrompt。前端(桌宠首启向导)也可读它渲染同一套题。",
+  "questions": [
+    { "field": "name", "q": "给你的宠物起个名字？", "type": "free", "default": "Coco" },
+    { "field": "species", "q": "它是什么动物 / 品种？", "type": "free", "default": "雪纳瑞小狗" },
+    { "field": "ownerAddress", "q": "它该怎么称呼你？", "type": "free", "default": "主人" },
+    { "field": "temperament", "q": "它的性格更偏哪种？", "type": "choice",
+      "options": [
+        { "value": "introvert", "label": "安静内向 i — 默默陪着你" },
+        { "value": "extrovert", "label": "活泼外向 e — 元气话痨" },
+        { "value": "aloof", "label": "高冷傲娇 — 嘴硬心软" },
+        { "value": "clingy", "label": "黏人撒娇 — 求关注" }
+      ], "default": "extrovert" },
+    { "field": "tone", "q": "说话语气？(可多选)", "type": "multi",
+      "options": ["温柔安心", "俏皮搞怪", "高冷简短", "元气满满", "黏人撒娇"],
+      "default": ["俏皮搞怪", "元气满满"] },
+    { "field": "quirk", "q": "有什么小怪癖 / 小弱点？", "type": "free",
+      "placeholder": "例：贪吃、爱睡觉、怕打雷", "default": "贪吃，什么都想尝一口" },
+    { "field": "catchphrase", "q": "口头禅 / 语气词？", "type": "free",
+      "placeholder": "例：汪 / 喵 / 咕", "default": "汪" }
+  ]
+}

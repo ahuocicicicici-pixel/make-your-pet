@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>姐姐的雪纳瑞桌宠安装说明</title>
+    <style>
+      :root {
+        --ink: #272422;
+        --muted: #6f6761;
+        --paper: #fffaf5;
+        --card: #ffffff;
+        --line: #eadfd4;
+        --pink: #ff6f9f;
+        --blue: #92c7ec;
+        --green: #78b989;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 12% 8%, #ffe0eb 0 16%, transparent 34%),
+          radial-gradient(circle at 88% 12%, #dff0ff 0 14%, transparent 32%),
+          linear-gradient(180deg, #fff8f0, #f7fbff);
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 38px 0 56px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 210px;
+        gap: 28px;
+        align-items: center;
+        padding: 34px;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: rgb(255 255 255 / 0.78);
+        box-shadow: 0 22px 70px rgb(94 71 53 / 0.14);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(34px, 6vw, 58px);
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 34px 0 16px;
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 19px;
+      }
+
+      .subtitle {
+        margin-top: 16px;
+        max-width: 640px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .pet {
+        width: 190px;
+        height: auto;
+        filter: drop-shadow(0 14px 22px rgb(0 0 0 / 0.18));
+      }
+
+      .bubble {
+        position: relative;
+        margin-top: 18px;
+        padding: 14px 18px;
+        border: 1px solid #ffd1df;
+        border-radius: 18px;
+        background: #fff;
+        color: #5a3b46;
+        font-weight: 650;
+      }
+
+      .checklist,
+      .steps,
+      .faq {
+        display: grid;
+        gap: 14px;
+      }
+
+      .card,
+      .step {
+        display: grid;
+        grid-template-columns: 104px minmax(0, 1fr);
+        gap: 18px;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--card);
+        box-shadow: 0 10px 30px rgb(94 71 53 / 0.08);
+      }
+
+      .card img,
+      .step img {
+        width: 96px;
+        justify-self: center;
+        filter: drop-shadow(0 8px 14px rgb(0 0 0 / 0.14));
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        margin-bottom: 8px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: #fff0f6;
+        color: #9e3155;
+        font-size: 13px;
+        font-weight: 750;
+      }
+
+      code {
+        font-family: "SFMono-Regular", Consolas, monospace;
+      }
+
+      .command {
+        margin-top: 10px;
+        padding: 12px 14px;
+        border-radius: 14px;
+        background: #252525;
+        color: #fff;
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 14px;
+        overflow-x: auto;
+      }
+
+      .tip {
+        margin-top: 10px;
+        color: var(--muted);
+      }
+
+      .mini-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .mini {
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: rgb(255 255 255 / 0.78);
+      }
+
+      .mini strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      a {
+        color: #176db0;
+        font-weight: 700;
+      }
+
+      footer {
+        margin-top: 32px;
+        padding: 20px;
+        border-radius: 22px;
+        background: #fff;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      @media (max-width: 720px) {
+        .hero,
+        .card,
+        .step {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .mini-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div>
+          <h1>姐姐，雪纳瑞桌宠安装指南</h1>
+          <p class="subtitle">
+            这是一只可以趴在 MacBook 桌面上的小雪纳瑞。它会待机舔爪爪、挥手、跳一下、认真工作，还能在屏幕上左右走。
+          </p>
+          <div class="bubble">姐姐跟着我一步一步来，装好以后我就会在桌面陪你。</div>
+        </div>
+        <img class="pet" src="./guide-assets/teacher-hello.png" alt="挥手的雪纳瑞" />
+      </section>
+
+      <h2>安装前准备</h2>
+      <section class="checklist">
+        <article class="card">
+          <img src="./guide-assets/teacher-idle.png" alt="舔爪爪的雪纳瑞" />
+          <div>
+            <span class="badge">准备 1</span>
+            <h3>把压缩包放到 MacBook</h3>
+            <p>把 <code>schnauzer-desktop-pet-mac-source.zip</code> 发到姐姐的 MacBook，双击解压。</p>
+            <p class="tip">建议放在“下载”或“桌面”，先不要放进系统目录。</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./guide-assets/teacher-work.png" alt="认真工作的雪纳瑞" />
+          <div>
+            <span class="badge">准备 2</span>
+            <h3>安装 Node.js LTS</h3>
+            <p>打开 <a href="https://nodejs.org/" target="_blank">nodejs.org</a>，下载并安装 LTS 版本。</p>
+            <p class="tip">一路点继续即可。Node.js 是让桌宠运行的小工具。</p>
+          </div>
+        </article>
+      </section>
+
+      <h2>开始安装</h2>
+      <section class="steps">
+        <article class="step">
+          <img src="./guide-assets/teacher-hop.png" alt="跳一下的雪纳瑞" />
+          <div>
+            <span class="badge">步骤 1</span>
+            <h3>打开终端</h3>
+            <p>按 <code>Command + 空格</code>，输入 <code>Terminal</code> 或 <code>终端</code>，回车打开。</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <img src="./guide-assets/teacher-wait.png" alt="等待的雪纳瑞" />
+          <div>
+            <span class="badge">步骤 2</span>
+            <h3>进入桌宠文件夹</h3>
+            <p>在终端输入 <code>cd </code>，注意后面有一个空格。然后把解压后的文件夹拖进终端窗口，按回车。</p>
+            <div class="command">cd 拖入文件夹后自动出现的路径</div>
+            <p class="tip">拖进去以后，终端会自动补全路径，姐姐不用手打长路径。</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <img src="./guide-assets/teacher-work.png" alt="工作中的雪纳瑞" />
+          <div>
+            <span class="badge">步骤 3</span>
+            <h3>安装运行需要的文件</h3>
+            <p>复制下面这行到终端，按回车：</p>
+            <div class="command">npm install</div>
+            <p class="tip">第一次会下载一些文件，可能要等几分钟。看到光标重新出现就完成了。</p>
+          </div>
+        </article>
+
+        <article class="step">
+          <img src="./guide-assets/teacher-hello.png" alt="挥手的雪纳瑞" />
+          <div>
+            <span class="badge">步骤 4</span>
+            <h3>启动桌宠</h3>
+            <p>继续复制下面这行到终端，按回车：</p>
+            <div class="command">npm start</div>
+            <p class="tip">如果看到小雪纳瑞出现在桌面右下角，就安装成功了。</p>
+          </div>
+        </article>
+      </section>
+
+      <h2>怎么操作它</h2>
+      <section class="mini-grid">
+        <div class="mini">
+          <strong>移动位置</strong>
+          <p>直接拖动小狗身体，就能把它放到喜欢的位置。</p>
+        </div>
+        <div class="mini">
+          <strong>显示按钮</strong>
+          <p>鼠标放到小狗附近，会出现 Hi、Hop、Wait、Work、Oops、左右走和退出按钮。</p>
+        </div>
+        <div class="mini">
+          <strong>退出</strong>
+          <p>点按钮里的 <code>x</code> 即可退出。下次再运行 <code>npm start</code> 就能回来。</p>
+        </div>
+      </section>
+
+      <h2>常见问题</h2>
+      <section class="faq">
+        <article class="card">
+          <img src="./guide-assets/teacher-oops.png" alt="委屈的雪纳瑞" />
+          <div>
+            <h3>如果 macOS 说“无法验证开发者”</h3>
+            <p>这是因为这个小应用是家里自用的，没有苹果开发者签名。右键 App 选择“打开”，或到“系统设置 -> 隐私与安全性”里允许打开。</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./guide-assets/teacher-wait.png" alt="等待的雪纳瑞" />
+          <div>
+            <h3>如果 <code>npm install</code> 很久没动</h3>
+            <p>先等一会儿，网络慢时 Electron 下载会比较久。如果十几分钟都没有变化，关闭终端重新打开，再进入文件夹重跑 <code>npm install</code>。</p>
+          </div>
+        </article>
+      </section>
+
+      <h2>想做成正式 App</h2>
+      <section class="card">
+        <img src="./guide-assets/teacher-work.png" alt="认真工作的雪纳瑞" />
+        <div>
+          <h3>打包成 .dmg</h3>
+          <p>安装成功后，如果想变成可以双击安装的 Mac App，在同一个文件夹运行：</p>
+          <div class="command">npm run dist:mac</div>
+          <p class="tip">生成结果会在 <code>dist</code> 文件夹里。以后可以直接打开 App，不一定每次都从终端启动。</p>
+        </div>
+      </section>
+
+      <footer>姐姐装好以后，小雪纳瑞会在桌面待命。它平时会舔爪爪，等你靠近就会露出控制按钮。</footer>
+    </main>
+  </body>
+</html>

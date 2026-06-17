@@ -1,0 +1,173 @@
+:root {
+  --cell-w: 192px;
+  --cell-h: 208px;
+  --scale: 1.18;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: transparent;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+}
+
+/* Shell: flex column, pet at bottom */
+.pet-shell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+}
+
+/* ── Bubble ─────────────────────────────────────────────────────────────────── */
+#bubble-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 60px;
+  align-items: flex-end;
+  pointer-events: none;
+  padding-bottom: 6px;
+}
+
+#bubble {
+  background: #fff;
+  border-radius: 18px;
+  padding: 6px 16px;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 0.16);
+  max-width: 165px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(6px) scale(0.92);
+  transition: opacity 160ms ease, transform 160ms ease;
+  pointer-events: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+#bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #fff;
+}
+
+#bubble.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Long messages (COCO speaking) wrap instead of single-line */
+#bubble.wrap {
+  white-space: normal;
+  max-width: 200px;
+  line-height: 1.35;
+  text-align: left;
+}
+
+/* ── Stage ──────────────────────────────────────────────────────────────────── */
+.stage {
+  width: 180px;
+  height: 195px;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+  filter: drop-shadow(0 10px 20px rgb(0 0 0 / 0.22));
+  flex-shrink: 0;
+  cursor: default;
+}
+
+/* ── Pet sprite ─────────────────────────────────────────────────────────────── */
+/* Default = per-frame PNG mode: each frame is a 512×512 transparent image,
+   displayed with background-size:contain inside a fixed display box. */
+.pet {
+  position: relative;
+  width: 180px;
+  height: 195px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  transform-origin: center bottom;
+  image-rendering: auto;
+}
+
+/* Per-frame layers: all decoded & stacked, swapped by opacity (flash-free) */
+.pet > .frame {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  opacity: 0;
+  pointer-events: none;
+}
+.pet > .frame.on { opacity: 1; }
+
+/* Legacy sprite-sheet fallback (until per-frame assets are delivered).
+   Keeps the SAME 250×270 box as per-frame mode — never resize the element,
+   or macOS transparent-window compositing leaves blank regions on switch.
+   The sprite cell is scaled to fill the box via background-size/position,
+   set inline by the renderer. */
+
+/* Horizontal mirror for left-facing walk (works in both modes — box is fixed) */
+.pet.flip { transform: scaleX(-1); }
+
+/* ── Status badge (dirty / hungry / sad) ───────────────────────────────────── */
+.status-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  font-size: 18px;
+  line-height: 1;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+  animation: badge-bounce 2s ease-in-out infinite;
+}
+.status-badge.hidden { display: none; }
+
+@keyframes badge-bounce {
+  0%, 100% { transform: translateY(0);    }
+  50%       { transform: translateY(-4px); }
+}
+
+/* ── Right-click context menu ───────────────────────────────────────────────── */
+.ctx-menu {
+  position: fixed;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 0.18);
+  padding: 4px;
+  z-index: 100;
+}
+
+.ctx-menu.hidden { display: none; }
+
+.ctx-menu button {
+  display: block;
+  width: 100%;
+  padding: 6px 22px;
+  border: 0;
+  background: transparent;
+  color: #e53e3e;
+  font-size: 13px;
+  text-align: left;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.ctx-menu button:hover { background: #fff0f0; }

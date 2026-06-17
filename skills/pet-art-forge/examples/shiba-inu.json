@@ -1,0 +1,80 @@
+{
+  "id": "shiba-inu-daifuku",
+  "name": "柴犬 大福",
+  "version": 1,
+  "sourcePhotos": [
+    "source/shiba-front.jpg",
+    "source/shiba-side.jpg"
+  ],
+  "species": {
+    "type": "shiba inu dog",
+    "age": "puppy",
+    "bodyType": "round cuddly proportions, big head, short sturdy legs, fluffy curled tail"
+  },
+  "coloring": {
+    "primary": {
+      "name": "sesame red",
+      "hex": "#D98B45",
+      "description": "warm red-tan fur over back, head and outer legs"
+    },
+    "secondary": {
+      "name": "cream",
+      "hex": "#F6EBDA",
+      "description": "cream urajiro markings on cheeks, chest, belly and inner legs"
+    },
+    "pattern": "classic shiba urajiro: cream cheeks and chest, tan mask on top"
+  },
+  "landmarks": [
+    {
+      "name": "eyes",
+      "description": "small triangular dark eyes, alert and friendly",
+      "required": true
+    },
+    {
+      "name": "ears",
+      "description": "small pointed upright triangle ears",
+      "required": true
+    },
+    {
+      "name": "nose",
+      "description": "black button nose",
+      "required": true
+    },
+    {
+      "name": "smile",
+      "description": "signature shiba upturned mouth, cheeky smile",
+      "required": true
+    },
+    {
+      "name": "tail",
+      "description": "thick tail curled over the back",
+      "required": true
+    }
+  ],
+  "outfit": [
+    {
+      "type": "scarf",
+      "color": "navy #2E4A7A",
+      "detail": "small navy-blue knitted scarf"
+    }
+  ],
+  "facing": "facing camera, slight 3/4 right turn",
+  "style": {
+    "type": "modern kawaii sticker illustration",
+    "technique": "clean bold outlines, soft cel-shading",
+    "signature": "thick white die-cut sticker border",
+    "palette": "warm earthy"
+  },
+  "personality": "proud, cheeky, loyal",
+  "negativePalette": [
+    "not a fox",
+    "no black-and-tan only",
+    "not a cat",
+    "no realistic dog"
+  ],
+  "consistencyCheck": {
+    "paletteTolerance": 75,
+    "scaleTolerance": 0.12,
+    "checkOutfit": false
+  }
+}

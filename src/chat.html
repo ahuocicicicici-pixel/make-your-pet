@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat with COCO</title>
+  <link rel="stylesheet" href="./chat-styles.css" />
+</head>
+<body>
+  <div class="chat">
+    <header class="chat-head">
+      <span class="avatar"><img class="face" src="../assets/anim/idle/frame_00.png" alt="COCO" /></span>
+      <span class="title">COCO <small>· 雪纳瑞</small></span>
+      <button id="close" class="close" title="收起">✕</button>
+    </header>
+    <div id="log" class="log"></div>
+    <form id="composer" class="composer">
+      <input id="input" type="text" placeholder="跟 COCO 说点什么…" autocomplete="off" />
+      <button id="send" type="submit">发送</button>
+    </form>
+  </div>
+  <script src="./chat-renderer.js"></script>
+</body>
+</html>

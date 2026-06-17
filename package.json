@@ -1,0 +1,43 @@
+{
+  "name": "schnauzer-desktop-pet",
+  "version": "0.1.0",
+  "description": "A tiny transparent desktop schnauzer pet for macOS.",
+  "author": "Growmax",
+  "main": "src/bootstrap.js",
+  "productName": "Coco",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "personality": "node scripts/make-personality.js",
+    "check:assets": "node tools/check-assets.js",
+    "dist:mac": "electron-builder --mac dmg zip",
+    "dist:dir": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "com.growmax.coco",
+    "productName": "Coco",
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json",
+      "coco.config.json",
+      "link.config.json"
+    ],
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "icon": "assets/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": "arm64"
+        }
+      ],
+      "hardenedRuntime": false,
+      "gatekeeperAssess": false
+    }
+  },
+  "devDependencies": {
+    "electron": "^35.7.5",
+    "electron-builder": "^26.0.12"
+  }
+}

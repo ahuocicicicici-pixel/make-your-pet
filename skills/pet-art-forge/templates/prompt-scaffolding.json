@@ -1,0 +1,17 @@
+{
+  "_README": "提示词固定脚手架。与具体角色无关：build-prompt.js 把它包在『角色前缀 + 逐帧动作』外层。{{...}} 由 bible 填充。",
+
+  "stylePrefixTemplate": "A {{personality}} {{species.type}} {{species.age}}, {{species.bodyType}}. {{coloring.primary.description}}; {{coloring.secondary.description}}; {{coloring.pattern}}. Distinctive features: {{landmarks}}. Wearing: {{outfit}}. {{facing}}. {{style.type}}, {{style.technique}}, {{style.signature}}, {{style.palette}} palette. Full body, single character, centered.",
+
+  "techSuffix": "Transparent background, no background scene, no ground, no floor, no drop shadow on ground. Square 512x512 canvas, full body fully inside the frame with margin, character horizontally and vertically centered. IMPORTANT consistency: this is one frame of a multi-frame animation of the SAME exact character — keep identical character design, identical fur colors, identical outfit, and identical overall body scale and centering as the other frames of this action; ONLY the pose/expression described changes. High detail, crisp clean edges. Same character as the reference image.",
+
+  "baseNegative": "realistic photo, 3D render, photoreal, blurry, low-res, jpeg artifacts, deformed, extra limbs, extra legs, missing legs, mutated paws, fused limbs, two heads, multiple animals, multiple characters, different species, human, person, text, letters, numbers, watermark, signature, logo, frame, border box, cropped body, cut off, out of frame, busy background, scenery, colored background, opaque background, dark heavy drop shadow, inconsistent style, flat no-outline, changing size between frames, off-center",
+
+  "placeholders": {
+    "_doc": "actions.template.js 的逐帧描述里可用的占位符，build-prompt 会用 bible 替换。",
+    "[animal]": "bible.species.type 的最后一个词 (cat/dog/dino…)",
+    "[ANIMAL]": "bible.species.type 全称",
+    "[bowl]": "适配物种的食盆描述 (a small pet food bowl)",
+    "[toy]": "适配物种的玩具 (a small ball)"
+  }
+}

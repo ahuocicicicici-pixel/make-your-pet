@@ -1,0 +1,175 @@
+{
+  "name": "COCO pixel sticker pack v1 cropped",
+  "source": "assets/sticker_sources/coco_pixel_v1_sheet.png",
+  "stickers": [
+    {
+      "id": "watching",
+      "caption": "暗中观察",
+      "file": "assets/stickers_coco_pixel_v1_crop/watching.png",
+      "keywords": [
+        "暗中观察",
+        "逾期",
+        "追问",
+        "开始了吗"
+      ],
+      "size": [
+        430,
+        379
+      ]
+    },
+    {
+      "id": "angry",
+      "caption": "生气气",
+      "file": "assets/stickers_coco_pixel_v1_crop/angry.png",
+      "keywords": [
+        "生气气",
+        "催一下",
+        "拖延"
+      ],
+      "size": [
+        430,
+        376
+      ]
+    },
+    {
+      "id": "morning",
+      "caption": "早上好",
+      "file": "assets/stickers_coco_pixel_v1_crop/morning.png",
+      "keywords": [
+        "早上好",
+        "晨间问候",
+        "日程概览"
+      ],
+      "size": [
+        430,
+        376
+      ]
+    },
+    {
+      "id": "recorded",
+      "caption": "记好啦",
+      "file": "assets/stickers_coco_pixel_v1_crop/recorded.png",
+      "keywords": [
+        "记好啦",
+        "记录",
+        "新增任务"
+      ],
+      "size": [
+        430,
+        427
+      ]
+    },
+    {
+      "id": "due_now",
+      "caption": "到点啦",
+      "file": "assets/stickers_coco_pixel_v1_crop/due_now.png",
+      "keywords": [
+        "到点啦",
+        "准点提醒",
+        "deadline"
+      ],
+      "size": [
+        430,
+        384
+      ]
+    },
+    {
+      "id": "not_yet",
+      "caption": "怎么还没",
+      "file": "assets/stickers_coco_pixel_v1_crop/not_yet.png",
+      "keywords": [
+        "怎么还没",
+        "未完成",
+        "轻推"
+      ],
+      "size": [
+        430,
+        380
+      ]
+    },
+    {
+      "id": "done",
+      "caption": "搞定啦",
+      "file": "assets/stickers_coco_pixel_v1_crop/done.png",
+      "keywords": [
+        "搞定啦",
+        "完成",
+        "夸奖"
+      ],
+      "size": [
+        430,
+        380
+      ]
+    },
+    {
+      "id": "water",
+      "caption": "喝口水",
+      "file": "assets/stickers_coco_pixel_v1_crop/water.png",
+      "keywords": [
+        "喝口水",
+        "休息",
+        "健康"
+      ],
+      "size": [
+        427,
+        430
+      ]
+    },
+    {
+      "id": "later",
+      "caption": "晚点再叫",
+      "file": "assets/stickers_coco_pixel_v1_crop/later.png",
+      "keywords": [
+        "晚点再叫",
+        "安静时段",
+        "延后"
+      ],
+      "size": [
+        430,
+        375
+      ]
+    },
+    {
+      "id": "break_down",
+      "caption": "拆小一点",
+      "file": "assets/stickers_coco_pixel_v1_crop/break_down.png",
+      "keywords": [
+        "拆小一点",
+        "拆任务",
+        "规划"
+      ],
+      "size": [
+        430,
+        370
+      ]
+    },
+    {
+      "id": "guarding",
+      "caption": "我在守着",
+      "file": "assets/stickers_coco_pixel_v1_crop/guarding.png",
+      "keywords": [
+        "我在守着",
+        "守护",
+        "等待"
+      ],
+      "size": [
+        430,
+        370
+      ]
+    },
+    {
+      "id": "both",
+      "caption": "两个都叫",
+      "file": "assets/stickers_coco_pixel_v1_crop/both.png",
+      "keywords": [
+        "两个都叫",
+        "both",
+        "两人"
+      ],
+      "size": [
+        430,
+        422
+      ]
+    }
+  ]
+}

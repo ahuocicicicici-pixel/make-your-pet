@@ -1,0 +1,21 @@
+{
+  "_README": "云端模式可选配置。复制为 link.config.json 并填入你自己的值。纯本地运行时不需要本文件——缺失会自动降级为离线模式。",
+
+  "base": "https://YOUR_DOMAIN/coco/pet",
+  "token": "REPLACE_WITH_YOUR_CHANNEL_TOKEN",
+  "owner": "me",
+
+  "_updateBase_doc": "可选：远程热更新服务器根地址。留空则禁用自动更新。",
+  "updateBase": "",
+
+  "timeline": {
+    "_doc": "可选：生活轨迹仪表盘。pet=宠物轴, cc=使用者轴；user/pass 是仪表盘的访问凭据。",
+    "pet": "https://YOUR_DOMAIN/pet-timeline/",
+    "cc": "https://YOUR_DOMAIN/timeline/",
+    "petLabel": "COCO 的时间轴",
+    "ccLabel": "我的时间轴",
+    "host": "YOUR_DOMAIN",
+    "user": "REPLACE_WITH_TIMELINE_USER",
+    "pass": "REPLACE_WITH_TIMELINE_PASSWORD"
+  }
+}

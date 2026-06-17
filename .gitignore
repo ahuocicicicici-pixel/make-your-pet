@@ -1,0 +1,45 @@
+# ── deps / build artifacts ──────────────────────────────────────────────
+node_modules/
+dist/
+package-stage/
+*.dmg
+*.log
+.DS_Store
+tmp/
+
+# ── secrets: never commit (real values live only on the owner's machine) ──
+# channel tokens, timeline password, broker URLs
+link.config.json
+link.config.*.json
+coco.config.json
+# deploy credentials (SSH key path / VPS host / remote paths)
+tools/deploy.env
+# private keys
+*.pem
+*.key
+# mirror config (china registry; not for public clones)
+.npmrc
+
+# ── cloud (OpenClaw) secrets & runtime ──────────────────────────────────
+cloud/**/.env
+cloud/**/people.json
+cloud/**/tasks.json
+cloud/**/deliveries.jsonl
+cloud/**/pet-profile.json
+cloud/**/secrets/
+cloud/**/cache/
+
+# ── allow the templates back in (committed, placeholder values) ──────────
+!link.config.example.json
+!coco.config.example.json
+!tools/deploy.env.example
+!.npmrc.example
+!cloud/broker/.env.example
+!cloud/workspace/people.example.json
+
+# symlinked node_modules (no trailing slash to catch the symlink)
+node_modules
+
+# private: real pet photos are personal, not for the public repo
+references/ref-photo-real-dog.jpg
+*real-dog*.jpg

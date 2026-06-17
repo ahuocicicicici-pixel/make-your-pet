@@ -1,0 +1,27 @@
+{
+  "id": "orange-tabby-momo",
+  "name": "橘猫 MOMO",
+  "version": 1,
+  "sourcePhotos": ["source/momo-front.jpg", "source/momo-side.jpg"],
+  "species": { "type": "orange tabby cat", "age": "kitten", "bodyType": "round chubby proportions, big head, short legs, plush tail" },
+  "coloring": {
+    "primary":   { "name": "ginger orange", "hex": "#E8862E", "description": "warm ginger-orange fur over back, head and tail" },
+    "secondary": { "name": "cream", "hex": "#FBF3E4", "description": "cream-white belly, chest, chin and paws" },
+    "pattern": "bold classic tabby stripes, faint M-shape mark on the forehead"
+  },
+  "landmarks": [
+    { "name": "eyes", "description": "big round amber eyes, friendly and bright", "required": true },
+    { "name": "nose", "description": "small pink triangle nose", "required": true },
+    { "name": "whiskers", "description": "long white whiskers", "required": true },
+    { "name": "ears", "description": "pointy ears with pink inner lining", "required": true }
+  ],
+  "outfit": [
+    { "type": "bandana", "color": "red #D94F45", "detail": "small red bandana around the neck" },
+    { "type": "collar", "color": "gold #E8B83A", "detail": "thin collar with a tiny gold bell" }
+  ],
+  "facing": "facing camera, slight 3/4 left turn",
+  "style": { "type": "modern kawaii sticker illustration", "technique": "clean bold outlines, soft cel-shading", "signature": "thick white die-cut sticker border", "palette": "warm" },
+  "personality": "playful, mischievous, friendly",
+  "negativePalette": ["no blue fur", "no green fur", "not a dog", "no realistic cat"],
+  "consistencyCheck": { "paletteTolerance": 75, "scaleTolerance": 0.12, "checkOutfit": false }
+}

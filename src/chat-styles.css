@@ -1,0 +1,150 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif;
+  background: transparent;
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Speech card floating above the pet, with a tail pointing down at it */
+.chat {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 14px);
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 34px rgba(0,0,0,0.20), 0 0 0 0.5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chat::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+  filter: drop-shadow(0 4px 3px rgba(0,0,0,0.07));
+}
+
+/* Header */
+.chat-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  background: linear-gradient(135deg, #ffd6e2 0%, #ffe9d6 50%, #d8e6ff 100%);
+  -webkit-app-region: drag;
+}
+.avatar {
+  width: 24px; height: 24px; border-radius: 50%; overflow: hidden;
+  background: #fff; display: grid; place-items: center; font-size: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.14);
+}
+
+/* COCO head cropped from an existing sprite frame (reused art, no extra file) */
+.face {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transform: scale(1.95);
+  transform-origin: 50% 19%;
+}
+.title { font-size: 13.5px; font-weight: 800; color: #6b5560; flex: 1; letter-spacing: .3px; }
+.title small { font-weight: 600; opacity: .6; font-size: 11px; margin-left: 2px; }
+.close {
+  -webkit-app-region: no-drag;
+  border: 0; background: rgba(255,255,255,0.55); color: #9a8490;
+  width: 21px; height: 21px; border-radius: 50%;
+  font-size: 13px; cursor: pointer; line-height: 1; padding: 0;
+}
+.close:hover { background: #fff; color: #6b5560; }
+
+/* Conversation — cream with faint paw-print pattern */
+.log {
+  flex: 1;
+  overflow-y: auto;
+  padding: 11px 10px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  background-color: #fffaf6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cg fill='%23f4dfe6'%3E%3Cellipse cx='22' cy='27' rx='6.5' ry='5.5'/%3E%3Ccircle cx='14' cy='18' r='2.6'/%3E%3Ccircle cx='22' cy='15' r='2.6'/%3E%3Ccircle cx='30' cy='18' r='2.6'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 44px 44px;
+}
+.log::-webkit-scrollbar { width: 5px; }
+.log::-webkit-scrollbar-thumb { background: #ecdfe4; border-radius: 9px; }
+
+/* Message rows: avatar + bubble */
+.row { display: flex; align-items: flex-end; gap: 6px; max-width: 100%; }
+.row.me { flex-direction: row-reverse; }
+.ava {
+  flex: 0 0 auto;
+  width: 26px; height: 26px; border-radius: 50%; overflow: hidden;
+  display: grid; place-items: center; font-size: 16px;
+  background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+.row.me .ava { background: linear-gradient(135deg,#ffe1ec,#e2ecff); }
+
+.msg {
+  max-width: 78%;
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 1.45;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+.msg.coco {
+  background: #fff;
+  color: #3a2f34;
+  border: 1px solid #f1e2e8;
+  border-bottom-left-radius: 5px;
+}
+.msg.me {
+  background: linear-gradient(135deg, #ff9fc0, #ff7fae);
+  color: #fff;
+  border-bottom-right-radius: 5px;
+}
+.empty { color: #cdbcc4; font-size: 12px; text-align: center; margin: auto 0; }
+
+/* Composer */
+.composer {
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px;
+  border-top: 1px solid #f4e7ec;
+  background: #fff;
+}
+#input {
+  flex: 1;
+  border: 1.5px solid #ffe0ea;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 13px;
+  outline: none;
+  background: #fff8fb;
+}
+#input:focus { border-color: #ffb3cf; background: #fff; }
+#send {
+  border: 0;
+  background: linear-gradient(135deg, #ff9fc0, #ff7fae);
+  color: #fff;
+  font-size: 16px;
+  width: 40px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+#send:active { transform: scale(0.94); }
+
+/* Typing indicator (in a coco row) */
+.typing { display: flex; gap: 3px; padding: 9px 12px; background:#fff; border:1px solid #f1e2e8; border-radius:16px; border-bottom-left-radius:5px; }
+.typing span { width: 6px; height: 6px; border-radius: 50%; background: #e0b9c8; animation: blink 1.2s infinite both; }
+.typing span:nth-child(2) { animation-delay: .2s; }
+.typing span:nth-child(3) { animation-delay: .4s; }
+@keyframes blink { 0%,80%,100% { opacity:.3; } 40% { opacity:1; } }

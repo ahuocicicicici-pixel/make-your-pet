@@ -1,0 +1,4 @@
+# 国内镜像加速（可选）。复制为 .npmrc 使用。
+# 注意：打 DMG 时 dmgbuild-bundle 在 npmmirror 上可能 404，build 脚本会临时禁用本文件。
+registry=https://registry.npmmirror.com/
+electron_mirror=https://npmmirror.com/mirrors/electron/

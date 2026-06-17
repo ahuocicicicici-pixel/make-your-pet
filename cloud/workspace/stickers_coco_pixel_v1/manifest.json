@@ -1,0 +1,128 @@
+{
+  "name": "COCO pixel sticker pack v1",
+  "source_sheet": "assets/sticker_sources/coco_pixel_v1_sheet.png",
+  "style": "COCO as a female schnauzer desktop-pet pixel sticker: long eyelashes, big eyes, smiling lips, narrow muzzle, blue harness, pink straps.",
+  "stickers": [
+    {
+      "id": "watching",
+      "caption": "暗中观察",
+      "file": "assets/stickers_coco_pixel_v1/watching.png",
+      "keywords": [
+        "暗中观察",
+        "逾期",
+        "追问",
+        "开始了吗"
+      ]
+    },
+    {
+      "id": "angry",
+      "caption": "生气气",
+      "file": "assets/stickers_coco_pixel_v1/angry.png",
+      "keywords": [
+        "生气气",
+        "催一下",
+        "拖延"
+      ]
+    },
+    {
+      "id": "morning",
+      "caption": "早上好",
+      "file": "assets/stickers_coco_pixel_v1/morning.png",
+      "keywords": [
+        "早上好",
+        "晨间问候",
+        "日程概览"
+      ]
+    },
+    {
+      "id": "recorded",
+      "caption": "记好啦",
+      "file": "assets/stickers_coco_pixel_v1/recorded.png",
+      "keywords": [
+        "记好啦",
+        "记录",
+        "新增任务"
+      ]
+    },
+    {
+      "id": "due_now",
+      "caption": "到点啦",
+      "file": "assets/stickers_coco_pixel_v1/due_now.png",
+      "keywords": [
+        "到点啦",
+        "准点提醒",
+        "deadline"
+      ]
+    },
+    {
+      "id": "not_yet",
+      "caption": "怎么还没",
+      "file": "assets/stickers_coco_pixel_v1/not_yet.png",
+      "keywords": [
+        "怎么还没",
+        "未完成",
+        "轻推"
+      ]
+    },
+    {
+      "id": "done",
+      "caption": "搞定啦",
+      "file": "assets/stickers_coco_pixel_v1/done.png",
+      "keywords": [
+        "搞定啦",
+        "完成",
+        "夸奖"
+      ]
+    },
+    {
+      "id": "water",
+      "caption": "喝口水",
+      "file": "assets/stickers_coco_pixel_v1/water.png",
+      "keywords": [
+        "喝口水",
+        "休息",
+        "健康"
+      ]
+    },
+    {
+      "id": "later",
+      "caption": "晚点再叫",
+      "file": "assets/stickers_coco_pixel_v1/later.png",
+      "keywords": [
+        "晚点再叫",
+        "安静时段",
+        "延后"
+      ]
+    },
+    {
+      "id": "break_down",
+      "caption": "拆小一点",
+      "file": "assets/stickers_coco_pixel_v1/break_down.png",
+      "keywords": [
+        "拆小一点",
+        "拆任务",
+        "规划"
+      ]
+    },
+    {
+      "id": "guarding",
+      "caption": "我在守着",
+      "file": "assets/stickers_coco_pixel_v1/guarding.png",
+      "keywords": [
+        "我在守着",
+        "守护",
+        "等待"
+      ]
+    },
+    {
+      "id": "both",
+      "caption": "两个都叫",
+      "file": "assets/stickers_coco_pixel_v1/both.png",
+      "keywords": [
+        "两个都叫",
+        "both",
+        "两人"
+      ]
+    }
+  ]
+}

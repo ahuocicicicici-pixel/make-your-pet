@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pet Panel</title>
+  <link rel="stylesheet" href="./panel-styles.css" />
+</head>
+<body>
+  <div class="panel">
+    <nav class="tabs">
+      <button class="tab active" data-tab="care">照顾</button>
+      <button class="tab" data-tab="work">打工</button>
+      <button class="tab" data-tab="study">上学</button>
+      <button class="tab" data-tab="shop">商店</button>
+    </nav>
+
+    <!-- Busy banner (shown on every tab while working/studying) -->
+    <div id="busy-banner" class="busy-banner hidden">
+      <span id="busy-label">💼 打工中</span>
+      <span id="busy-count">--:--</span>
+    </div>
+
+    <!-- 照顾 -->
+    <section id="tab-care" class="tab-page">
+      <div class="stats">
+        <div class="stat-row">
+          <span class="label">🦴 饱食</span>
+          <div class="bar-wrap"><div class="bar hunger" id="bar-hunger"></div></div>
+          <span class="val" id="val-hunger">--</span>
+        </div>
+        <div class="stat-row">
+          <span class="label">🛁 清洁</span>
+          <div class="bar-wrap"><div class="bar clean" id="bar-clean"></div></div>
+          <span class="val" id="val-clean">--</span>
+        </div>
+        <div class="stat-row">
+          <span class="label">😊 心情</span>
+          <div class="bar-wrap"><div class="bar mood" id="bar-mood"></div></div>
+          <span class="val" id="val-mood">--</span>
+        </div>
+        <div class="stat-row">
+          <span class="label">❤️ 健康</span>
+          <div class="bar-wrap"><div class="bar health" id="bar-health"></div></div>
+          <span class="val" id="val-health">--</span>
+        </div>
+      </div>
+      <div class="meta">
+        <span id="coins">💰 --</span>
+        <span id="edu-badge">🎓 --</span>
+        <span id="level">Lv.1</span>
+      </div>
+      <div class="actions">
+        <div class="food-list" id="food-list"></div>
+        <div class="btn-row">
+          <button id="btn-bath">🛁 洗澡</button>
+          <button id="btn-play">🎾 玩耍</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 打工 -->
+    <section id="tab-work" class="tab-page hidden">
+      <div class="hint" id="work-hint">😊 心情 ≥ 80 时工资 +30%</div>
+      <div class="job-list" id="job-list"></div>
+    </section>
+
+    <!-- 上学 -->
+    <section id="tab-study" class="tab-page hidden">
+      <div class="edu-card">
+        <div class="edu-now">当前学历：<b id="edu-now">--</b></div>
+        <div class="edu-progress" id="edu-progress"></div>
+        <button id="btn-study" class="big-btn">📚 去上课</button>
+        <div class="edu-unlock" id="edu-unlock"></div>
+      </div>
+    </section>
+
+    <!-- 商店 -->
+    <section id="tab-shop" class="tab-page hidden">
+      <div class="shop-coins">💰 <span id="shop-coins">--</span></div>
+      <div class="shop-list" id="shop-list"></div>
+    </section>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+  <script src="./panel-renderer.js"></script>
+</body>
+</html>

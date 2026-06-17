@@ -1,0 +1,266 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  background: transparent;
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 10px 14px 12px;
+  box-shadow: 0 8px 36px rgba(0, 0, 0, 0.24), 0 0 0 0.5px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  position: relative;
+}
+
+.hidden { display: none !important; }
+
+/* ── Tabs ────────────────────────────────────────────────────────────────────── */
+.tabs {
+  display: flex;
+  gap: 3px;
+  background: #f0f2f5;
+  border-radius: 9px;
+  padding: 3px;
+}
+.tab {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  color: #777;
+  padding: 4px 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.tab.active {
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* ── Busy banner ─────────────────────────────────────────────────────────────── */
+.busy-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff7e0;
+  border: 1px solid #f5e0a3;
+  color: #8a6d1a;
+  border-radius: 9px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+#busy-count { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+.tab-page { display: flex; flex-direction: column; gap: 9px; flex: 1; }
+
+/* ── Stats ───────────────────────────────────────────────────────────────────── */
+.stats { display: flex; flex-direction: column; gap: 8px; }
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 26px;
+  align-items: center;
+  gap: 8px;
+}
+
+.label { font-size: 12px; color: #555; white-space: nowrap; }
+.val   { font-size: 11px; color: #999; text-align: right; }
+
+.bar-wrap {
+  height: 7px;
+  background: #eee;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 500ms ease, background 300ms ease;
+}
+
+.bar.hunger { background: #f6ad55; }
+.bar.clean  { background: #63b3ed; }
+.bar.mood   { background: #f687b3; }
+.bar.health { background: #68d391; }
+.bar.low    { background: #fc5656 !important; }
+
+/* ── Meta row ────────────────────────────────────────────────────────────────── */
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #888;
+  padding-top: 4px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+/* ── Care actions ────────────────────────────────────────────────────────────── */
+.actions { display: flex; flex-direction: column; gap: 7px; }
+
+.food-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.food-btn {
+  flex: 1;
+  min-width: 68px;
+  padding: 5px 8px;
+  border: 1px solid #e8ecf0;
+  border-radius: 9px;
+  background: #f7f9fc;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  transition: background 120ms;
+}
+.food-btn:hover:not(:disabled) { background: #edf2ff; border-color: #c3d0f5; }
+.food-btn:disabled { opacity: 0.38; cursor: not-allowed; }
+.food-btn .count { color: #b0bac4; margin-left: 3px; font-size: 11px; }
+
+.btn-row { display: flex; gap: 6px; }
+
+.btn-row button {
+  flex: 1;
+  padding: 6px 4px;
+  border: 1px solid #e8ecf0;
+  border-radius: 9px;
+  background: #f7f9fc;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  transition: background 120ms;
+}
+.btn-row button:hover:not(:disabled) { background: #e8f4fd; border-color: #b3d4f0; }
+.btn-row button:disabled { opacity: 0.38; cursor: not-allowed; }
+
+/* ── Work tab ────────────────────────────────────────────────────────────────── */
+.hint {
+  font-size: 11px;
+  color: #b08a2e;
+  background: #fdf6e3;
+  border-radius: 7px;
+  padding: 4px 8px;
+}
+.hint.bonus-on { color: #1d7a3c; background: #e8f8ee; }
+
+.job-list { display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+
+.job {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border: 1px solid #e8ecf0;
+  border-radius: 10px;
+  padding: 7px 10px;
+  gap: 2px 8px;
+  background: #fafbfd;
+}
+.job.locked { opacity: 0.55; }
+.job-name { font-size: 13px; color: #222; }
+.job-sub  { grid-column: 1; font-size: 11px; color: #98a2ad; }
+.job-go {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  border: 0;
+  background: #4a7df0;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.job-go:disabled { background: #ccd4de; cursor: not-allowed; }
+.job-lock {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  font-size: 11px;
+  color: #aab3bd;
+}
+
+/* ── Study tab ───────────────────────────────────────────────────────────────── */
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #e8ecf0;
+  border-radius: 12px;
+  padding: 14px 12px;
+  background: #fafbfd;
+  text-align: center;
+}
+.edu-now { font-size: 13px; color: #444; }
+.edu-progress { font-size: 12px; color: #888; }
+.edu-progress .dots { letter-spacing: 3px; font-size: 14px; }
+.big-btn {
+  border: 0;
+  background: #4a7df0;
+  color: #fff;
+  font-size: 13px;
+  padding: 9px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.big-btn:disabled { background: #ccd4de; cursor: not-allowed; }
+.edu-unlock { font-size: 11px; color: #98a2ad; }
+
+/* ── Shop tab ────────────────────────────────────────────────────────────────── */
+.shop-coins { font-size: 12px; color: #8a6d1a; text-align: right; }
+
+.shop-list { display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+
+.shop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e8ecf0;
+  border-radius: 10px;
+  padding: 7px 10px;
+  background: #fafbfd;
+}
+.shop-item .info  { font-size: 13px; color: #222; }
+.shop-item .own   { font-size: 11px; color: #98a2ad; margin-left: 5px; }
+.shop-buy {
+  border: 0;
+  background: #f0a93b;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.shop-buy:disabled { background: #ccd4de; cursor: not-allowed; }
+
+/* ── Toast ───────────────────────────────────────────────────────────────────── */
+.toast {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(40,40,40,0.88);
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 99px;
+  font-size: 12px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+.toast.hidden { display: none; }

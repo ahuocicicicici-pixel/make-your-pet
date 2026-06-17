@@ -1,0 +1,9 @@
+{
+  "_README": "把这份复制成 people.json 并填入你自己的 OpenClaw 微信账号 + peer。owner 的 key(owner1/owner2)是内部标识,可任意命名;提醒按 owner 路由,绝不发 system 频道。单人用就只留一个。",
+  "owner1": {
+    "label": "主人",
+    "channel": "openclaw-weixin",
+    "account": "你的BOT账号-im-bot",
+    "peer": "对方的peer@im.wechat"
+  }
+}

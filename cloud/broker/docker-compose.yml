@@ -1,0 +1,22 @@
+name: coco-reminder
+
+services:
+  app:
+    build: .
+    environment:
+      COCO_WORKSPACE: /app/workspace
+      XUNJI_API_KEY: ${XUNJI_API_KEY:-}
+      TZ: Asia/Shanghai
+    volumes:
+      - coco-workspace:/app/workspace
+    command: ["node", "src/cli.js", "heartbeat"]
+    restart: "no"
+    mem_limit: 256m
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  coco-workspace:

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schnauzer Pet</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="pet-shell">
+      <div id="bubble-wrap">
+        <div id="bubble"></div>
+      </div>
+      <section id="stage" class="stage" aria-label="Schnauzer desktop pet">
+        <div id="pet" class="pet"></div>
+        <div id="status-badge" class="status-badge hidden"></div>
+      </section>
+      <div id="ctx-menu" class="ctx-menu hidden">
+        <button id="ctx-chat">💬 和 COCO 聊天</button>
+        <button id="ctx-panel">📊 状态面板</button>
+        <button id="ctx-tl-pet">📈 COCO 的时间轴</button>
+        <button id="ctx-tl-cc">📅 Cc 的时间轴</button>
+        <button id="ctx-quit">退出</button>
+      </div>
+    </main>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

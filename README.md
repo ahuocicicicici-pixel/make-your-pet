@@ -21,6 +21,15 @@
 
 换一张你自己宠物的照片 + 一套生成的逐帧动画，它就变成**你家的**那只猫 / 狗 / 任何动物。
 
+<p align="center">
+  <img src="docs/media/actions/eat.gif" width="120" title="喂饭" />
+  <img src="docs/media/actions/study.gif" width="120" title="上学" />
+  <img src="docs/media/actions/work-cook.gif" width="120" title="打工" />
+  <img src="docs/media/actions/play-frisbee.gif" width="120" title="玩耍" />
+  <img src="docs/media/actions/love.gif" width="120" title="撒娇" />
+</p>
+<p align="center"><sub>喂饭 · 上学 · 打工 · 玩耍 · 撒娇 —— 共 57 个动作，养成你自己的宠物</sub></p>
+
 ---
 
 ## 三步开跑

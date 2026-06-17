@@ -1,4 +1,18 @@
-# Coco — 你的桌面养成宠物 🐾
+<p align="center">
+  <img src="docs/media/cover.gif" alt="Coco 桌面宠物" width="240" />
+</p>
+
+<h1 align="center">Coco — 做你自己的桌面宠物 🐾</h1>
+
+<p align="center">
+  纯本地 · 无需服务器 · 借 LLM 聊天 · 本地提醒 · 一张照片换成你家的猫狗
+</p>
+
+<p align="center">
+  <img alt="platform" src="https://img.shields.io/badge/platform-macOS-black" />
+  <img alt="local-first" src="https://img.shields.io/badge/local--first-no%20server-success" />
+  <img alt="license" src="https://img.shields.io/badge/license-MIT-blue" />
+</p>
 
 一只活在 macOS 桌面上的透明小宠物：会呼吸、会撒娇、能喂养 / 打工 / 上学 / 玩耍 / 聊天，还会把日常记进生活时间轴。
 
